@@ -42,7 +42,6 @@ var spotifyClientKey = new Spotify(keys.spotifyKey);
 
 
 // Command line argument setup
-// var nodeArg = process.argv[2];
 var liriCommand = process.argv[2];
 
 var mySong = process.argv[3];
@@ -201,11 +200,11 @@ var randomText = function() {
 	fs.readFile("random.txt", "utf8", function(error, data) {
 		if (!error) {
 			doItResults.push({data});
-
+			console.log(doItResults);
 		}
-	}
+	});
 
-	console.log(doItResults);
+
 }
 
 
