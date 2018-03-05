@@ -35,10 +35,10 @@ var spotifyClientKey = new Spotify(keys.spotifyKey);
 // var omdbClientKey = new OMDB("trilogy");
 
 
-
 // testing keys
 // console.log(twitterClientKey)
 // console.log(spotifyClientKey)
+
 
 
 // Command line argument setup
@@ -52,13 +52,9 @@ var doIt = process.argv[2];
 
 
 
-
-
-
 // Twitter Function
 var getTwitterStuff = function() {
 
-	
 	// Object parameters
 	var params = {
 		screen_name: "PopaPop7",
@@ -91,19 +87,13 @@ var getTwitterStuff = function() {
 			console.log("-----------------")  
 
 		}
-
 	});
-
 };
-
-
 
 
 
 // Spotify Function
 var getSpotifyStuff = function(mySong) {
-
-	
 
 	// Default search if music not indicated
 	if (mySong === undefined) {
@@ -131,14 +121,12 @@ var getSpotifyStuff = function(mySong) {
 			}
 
 			// Required output
-			console.log("-----------------")
 			console.log(spotifyResults);
-			console.log("-----------------")
-
 		}
 
 	});
 }
+
 
 
 // Movie Function
@@ -181,14 +169,9 @@ var getMovieStuff = function(myMovie) {
 			console.log("-----------------")
 			console.log(movieResults);
 			console.log("-----------------")
-
 		}
-
 	});
-
 }
-
-
 
 
 
@@ -203,12 +186,7 @@ var randomText = function() {
 			console.log(doItResults);
 		}
 	});
-
-
 }
-
-
-
 
 
 
